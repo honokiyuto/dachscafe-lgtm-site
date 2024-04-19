@@ -1,0 +1,19 @@
+{
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["*.md", "README"],
+      "options": {
+        "parser": "markdown-nocjsp",
+        "printWidth": 80
+      }
+    },
+    {
+      "files": ["*.mdx"],
+      "options": {
+        "parser": "mdx-nocjsp",
+        "printWidth": 80
+      }
+    }
+  ]
+}
