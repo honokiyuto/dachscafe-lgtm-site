@@ -29,10 +29,7 @@ export const LGTMImage = ({ src }: Props) => {
     const image = new Image();
     image.src = src;
     image.onload = () => {
-      // TODO: あとりあえず1秒待つ
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 1000);
+      setIsLoading(false);
     };
   }, [src]);
 
