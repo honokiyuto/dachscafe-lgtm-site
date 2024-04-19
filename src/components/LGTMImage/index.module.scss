@@ -1,0 +1,60 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+  max-width: 200px;
+  img {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    border-style: none;
+    vertical-align: bottom;
+    &:hover {
+      opacity: 0.5;
+      transform: scale(1.01, 1.01);
+      transform: rotate(1deg);
+      transition: 0.3s ease-in-out;
+    }
+    &.copied {
+      opacity: 0.5;
+    }
+  }
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5f2915;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(206, 193, 193, 0.5);
+  }
+}
+
+.placeholder {
+  margin: 0 auto;
+  max-width: 200px;
+  min-height: 150px;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.animated-background {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  opacity: 0.5;
+  background-size: 800px 104px;
+  height: 150px;
+  position: relative;
+}

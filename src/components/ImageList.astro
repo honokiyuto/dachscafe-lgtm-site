@@ -1,5 +1,5 @@
 ---
-import { Image } from './Image';
+import { LGTMImage } from './LGTMImage';
 import { dropboxUrlList } from '../logics';
 const shuffledUrlList: string[] = [];
 dropboxUrlList.forEach((url) => {
@@ -17,7 +17,7 @@ const srcList = shuffledUrlList.map((src) =>
   {
     srcList.map((src) => (
       <li>
-        <Image client:load src={src} />
+        <LGTMImage client:load src={src} />
       </li>
     ))
   }
