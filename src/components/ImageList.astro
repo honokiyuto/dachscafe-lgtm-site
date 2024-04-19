@@ -36,7 +36,19 @@ const srcList = shuffledUrlList.map((src) =>
 
   @media (max-width: 768px) {
     li {
+      flex: 0 0 33%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    li {
       flex: 0 0 50%;
+    }
+  }
+
+  @media (max-width: 300px) {
+    li {
+      flex: 0 0 100%;
     }
   }
 </style>
