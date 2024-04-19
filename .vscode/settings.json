@@ -1,0 +1,26 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+  "stylelint.stylelintPath": "node_modules/stylelint",
+  "stylelint.validate": ["scss", "css", "html"],
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "color": "#ffffff",
+      "backgroundColor": "#00BFFF"
+    }
+  ],
+  "cSpell.words": [],
+  "cSpell.ignorePaths": ["yarn.lock", ".vscode"],
+  "files.eol": "\n",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

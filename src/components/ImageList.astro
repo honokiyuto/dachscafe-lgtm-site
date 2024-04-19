@@ -1,0 +1,42 @@
+---
+import { Image } from './Image';
+import { dropboxUrlList } from '../logics';
+const shuffledUrlList: string[] = [];
+dropboxUrlList.forEach((url) => {
+  const randomIndex = Math.floor(Math.random() * (shuffledUrlList.length + 1));
+  shuffledUrlList.splice(randomIndex, 0, url);
+});
+const srcList = shuffledUrlList.map((src) =>
+  src
+    .replace('www.dropbox.com', 'dl.dropboxusercontent.com')
+    .replace('?dl=0', ''),
+);
+---
+
+<ul>
+  {
+    srcList.map((src) => (
+      <li>
+        <Image client:load src={src} />
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    flex: 0 0 25%;
+    padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    li {
+      flex: 0 0 50%;
+    }
+  }
+</style>

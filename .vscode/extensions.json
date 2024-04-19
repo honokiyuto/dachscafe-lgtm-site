@@ -1,4 +1,16 @@
 {
-  "recommendations": ["astro-build.astro-vscode"],
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "esbenp.prettier-vscode",
+    "firsttris.vscode-jest-runner",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "christian-kohler.path-intellisense",
+    "eamodio.gitlens",
+    "visualstudioexptteam.vscodeintellicode",
+    "pkief.material-icon-theme",
+    "stylelint.vscode-stylelint",
+    "wayou.vscode-todo-highlight"
+  ],
   "unwantedRecommendations": []
 }
