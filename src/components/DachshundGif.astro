@@ -1,0 +1,29 @@
+---
+import { Picture } from 'astro:assets';
+import dachsfundGif from './images/dachshund.gif';
+---
+
+<div class="marquee overlay">
+  <Picture src={dachsfundGif} formats={['gif']} alt="Dachshund" height={100} />
+</div>
+<style>
+  .marquee {
+    overflow: hidden;
+    animation: marquee 10s linear infinite;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(150%);
+    }
+    100% {
+      transform: translateX(-150%);
+    }
+  }
+  .overlay {
+    filter: opacity(50%);
+  }
+</style>
