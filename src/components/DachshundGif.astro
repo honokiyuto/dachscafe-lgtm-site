@@ -14,6 +14,7 @@ import dachsfundGif from './images/dachshund.gif';
 </div>
 <script>
   import { DROPBOX_URL_LIST, DACHSHUND_TALK } from '../logics/constants';
+  import { convertDropboxUrlToSrc } from '../logics/convertDropboxUrlToSrc';
   import { shuffleArray } from '../logics/shuffleArray';
 
   const dachs = document.querySelector('.running-dachs');
@@ -21,7 +22,9 @@ import dachsfundGif from './images/dachshund.gif';
     const randomUrl = shuffleArray(DROPBOX_URL_LIST)[0];
     const randomDachsSay = shuffleArray(DACHSHUND_TALK)[0];
     alert(randomDachsSay + '\n (Random LGTM URL Copied!)');
-    navigator.clipboard.writeText(`![LGTM](${randomUrl})`);
+    navigator.clipboard.writeText(
+      `![LGTM](${convertDropboxUrlToSrc(randomUrl)})`,
+    );
   });
 </script>
 <style>
