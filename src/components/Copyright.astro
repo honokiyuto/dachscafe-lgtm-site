@@ -1,0 +1,22 @@
+---
+type Props = {
+  name: string;
+};
+
+const { name }: Props = Astro.props;
+const currentYear: number = new Date().getFullYear();
+---
+
+<footer>
+  <div class="copyright">
+    <p>&copy; {currentYear} {name}. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+footer p {
+  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.75rem;
+}
+</style>
