@@ -1,4 +1,4 @@
-export const dropboxUrlList = [
+export const DROPBOX_URL_LIST = [
   'https://www.dropbox.com/scl/fi/sot4pgvmb8vxigax9gwc5/LGTM-.001.png?rlkey=fsoqfketm1vchkv7hp6ukyrnl&st=tuxpw1og&dl=0',
   'https://www.dropbox.com/scl/fi/szxpzzps8bospvb8iqpgi/LGTM-.002.png?rlkey=4tnn1jzivsow8nf6i1r76v0c9&st=huupj5im&dl=0',
   'https://www.dropbox.com/scl/fi/x842ytup1qwwb980evch7/LGTM-.003.png?rlkey=bz60xd94elfpm4mrrf3tjavmb&st=g9ohnrix&dl=0',
@@ -23,4 +23,18 @@ export const dropboxUrlList = [
   'https://www.dropbox.com/scl/fi/ym3dnqzgby8ve18vrdlf4/.003.png?rlkey=qk6gce50j8bkmnxylbcuxlgtj&st=1yphp8tb&dl=0',
   'https://www.dropbox.com/scl/fi/i09ixncc188bx3myemvko/.002.png?rlkey=cg1c2lc5al780raqz8tlnk9f8&st=34gb30qp&dl=0',
   'https://www.dropbox.com/scl/fi/cegj8aj6sd7lt53e9cl07/.001.png?rlkey=tcinjnamb5lt5xnbo2qeaub8x&st=hhlq6t4e&dl=0',
+];
+
+export const DACHSHUND_TALK = [
+  '僕を捕まえてみろ！',
+  'おやつちょうだい！',
+  'お散歩行こうよ！',
+  'お腹すいた！',
+  'おもちゃで遊ぼう！',
+  'ご飯の時間かな？',
+  'おやつの時間かな？',
+  'お散歩の時間かな？',
+  '病院行きたくない！',
+  'お風呂嫌い！',
+  '神は死んだ',
 ];

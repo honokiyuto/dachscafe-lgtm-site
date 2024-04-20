@@ -4,8 +4,26 @@ import dachsfundGif from './images/dachshund.gif';
 ---
 
 <div class="marquee overlay">
-  <Picture src={dachsfundGif} formats={['gif']} alt="Dachshund" height={100} />
+  <Picture
+    src={dachsfundGif}
+    formats={['gif']}
+    alt="Dachshund"
+    height={100}
+    class="running-dachs"
+  />
 </div>
+<script>
+  import { DROPBOX_URL_LIST, DACHSHUND_TALK } from '../logics/constants';
+  import { shuffleArray } from '../logics/shuffleArray';
+
+  const dachs = document.querySelector('.running-dachs');
+  dachs?.addEventListener('click', () => {
+    const randomUrl = shuffleArray(DROPBOX_URL_LIST)[0];
+    const randomDachsSay = shuffleArray(DACHSHUND_TALK)[0];
+    alert(randomDachsSay + '\n (Random LGTM URL Copied!)');
+    navigator.clipboard.writeText(`![LGTM](${randomUrl})`);
+  });
+</script>
 <style>
   .marquee {
     overflow: hidden;

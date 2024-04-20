@@ -1,21 +1,12 @@
 ---
 import { LGTMImage } from './LGTMImage';
-import { dropboxUrlList } from '../logics';
-const shuffledUrlList: string[] = [];
-dropboxUrlList.forEach((url) => {
-  const randomIndex = Math.floor(Math.random() * (shuffledUrlList.length + 1));
-  shuffledUrlList.splice(randomIndex, 0, url);
-});
-const srcList = shuffledUrlList.map((src) =>
-  src
-    .replace('www.dropbox.com', 'dl.dropboxusercontent.com')
-    .replace('?dl=0', ''),
-);
+import { DROPBOX_URL_LIST } from '../logics/constants';
+import { convertDropboxUrlListToSrcList } from '../logics/convertdropboxToSrc';
 ---
 
 <ul>
   {
-    srcList.map((src) => (
+    convertDropboxUrlListToSrcList(DROPBOX_URL_LIST).map((src) => (
       <li>
         <LGTMImage client:load src={src} />
       </li>
@@ -52,3 +43,4 @@ const srcList = shuffledUrlList.map((src) =>
     }
   }
 </style>
+../logics/dropboxUrlList ../logics/constants
