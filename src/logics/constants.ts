@@ -25,16 +25,22 @@ export const DROPBOX_URL_LIST = [
   'https://www.dropbox.com/scl/fi/cegj8aj6sd7lt53e9cl07/.001.png?rlkey=tcinjnamb5lt5xnbo2qeaub8x&st=hhlq6t4e&dl=0',
 ];
 
-export const DACHSHUND_TALK = [
-  '僕を捕まえてみろ！',
+export const DACHSHUND_TALK_LIST = [
+  'ぼくをつかまえてみて！',
   'おやつちょうだい！',
-  'お散歩行こうよ！',
-  'お腹すいた！',
-  'おもちゃで遊ぼう！',
-  'ご飯の時間かな？',
-  'おやつの時間かな？',
-  'お散歩の時間かな？',
-  '病院行きたくない！',
-  'お風呂嫌い！',
-  '神は死んだ',
+  'おさんぽいこうよ！',
+  'おなかすいた！',
+  'おもちゃであそぼう！',
+  'ごはん？',
+  'おやつ？',
+  'そのボールなげて！',
 ];
+
+export const GOD_IS_DEAD = '神は死んだ';
+
+export const COPIED = 'Copied!';
+
+export const COPIED_RANDOM_LGTM = 'Copied random LGTM!';
+
+export const DACHSHUND_GIF =
+  'https://www.dropbox.com/scl/fi/7v5fbvnp7wkv6gsnm24rs/dachs_animation.gif?rlkey=2tthbipt3y1ncd0dtq36h48wt&st=gjpnv9a9&dl=0';

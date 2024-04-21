@@ -1,0 +1,40 @@
+---
+import RunningDachshund from './RunningDachshund/index.vue';
+---
+
+<div class="marquee">
+  <div class="marqueeContent">
+    <RunningDachshund client:only />
+  </div>
+</div>
+
+<style>
+  .marquee {
+    overflow: hidden;
+  }
+
+  .marqueeContent {
+    transform: translateX(100%);
+    animation: marquee 8s linear infinite;
+  }
+
+  @media (max-width: 768px) {
+    .marqueeContent {
+    transform: translateX(100%);
+    animation: marquee 5s linear infinite;
+  }
+  }
+
+  @keyframes marquee {
+    0% {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+</style>
