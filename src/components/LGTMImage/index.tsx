@@ -1,5 +1,5 @@
 import styles from './index.module.scss';
-import { useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useState } from 'react';
 
 type Props = {
   src: string;
