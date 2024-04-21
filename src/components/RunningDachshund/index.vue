@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import Comment from './Comment.vue';
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import {
   DACHSHUND_GIF,
   DACHSHUND_TALK_LIST,
@@ -36,6 +36,12 @@ const closeCommentSeconds = async (msec: number = 3000) => {
   }, msec);
 };
 
+watch(isShowComment, (newVal) => {
+  if (newVal) {
+    closeCommentSeconds(1000);
+  }
+});
+
 const handleDachshundClick = () => {
   const randomUrl = shuffleArray(DROPBOX_URL_LIST)[0];
   const randomLGTMMd = createLGTMMd(convertDropboxUrlToSrc(randomUrl));
@@ -48,7 +54,6 @@ const handleDachshundClick = () => {
   isShowComment.value = true;
   navigator.clipboard.writeText(randomLGTMMd);
   isFirstDachshundClick.value = false;
-  closeCommentSeconds(1000);
 };
 </script>
 
