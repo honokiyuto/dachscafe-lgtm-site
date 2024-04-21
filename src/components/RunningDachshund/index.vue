@@ -37,7 +37,6 @@ const closeCommentSeconds = async (msec: number = 3000) => {
 };
 
 const handleDachshundClick = () => {
-  isShowComment.value = false;
   const randomUrl = shuffleArray(DROPBOX_URL_LIST)[0];
   const randomLGTMMd = createLGTMMd(convertDropboxUrlToSrc(randomUrl));
   const randomDachshundTalk = shuffleArray(
