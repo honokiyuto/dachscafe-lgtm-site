@@ -1,3 +1,5 @@
+import { LGTM_WITH_COMMENT } from "./constants";
+
 export const convertDropboxUrlListToSrcList = (
   dropboxUrlList: string[],
 ): string[] => {
@@ -10,7 +12,7 @@ export const convertDropboxUrlToSrc = (url: string): string =>
     .replace('?dl=0', '');
 
 export const createLGTMMd = (src: string): string => {
-  return `![LGTM](${src})`;
+  return `${LGTM_WITH_COMMENT}\n![LGTM](${src})`;
 };
 
 export const shuffleArray = <T>(array: T[]): T[] => {

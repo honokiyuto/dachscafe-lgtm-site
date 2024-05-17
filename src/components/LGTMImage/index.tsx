@@ -1,3 +1,4 @@
+import { createLGTMMd } from '../../logics/utils';
 import styles from './index.module.scss';
 import { useEffect, useState } from 'react';
 
@@ -18,7 +19,7 @@ export const LGTMImage = ({ src }: Props) => {
   const [isLoading, setIsLoading] = useState(true);
 
   const handleClick = () => {
-    navigator.clipboard.writeText(`![LGTM](${src})`);
+    navigator.clipboard.writeText(createLGTMMd(src));
     setIsCopied(true);
     setTimeout(() => {
       setIsCopied(false);

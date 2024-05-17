@@ -44,3 +44,6 @@ export const COPIED_RANDOM_LGTM = 'Copied random LGTM!';
 
 export const DACHSHUND_GIF =
   'https://www.dropbox.com/scl/fi/7v5fbvnp7wkv6gsnm24rs/dachs_animation.gif?rlkey=2tthbipt3y1ncd0dtq36h48wt&st=gjpnv9a9&dl=0';
+
+export const LGTM_WITH_COMMENT =
+  'ご対応ありがとうございました！！\nLGTMです！！';
