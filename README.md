@@ -1,6 +1,6 @@
 # LGTM Dachsfund
 <a href="https://honokiyuto.github.io/dachscafe-lgtm-site/" target="_blank">
- <img width="822" alt="image" src="https://github.com/honokiyuto/dachscafe-lgtm-site/assets/141097668/dec27e9a-8059-4e78-90df-3106f53526a6">
+ <img width="822" alt="LGTM Dachshund のスクリーンショット" src="docs/screenshot.png">
 </a>
 
 

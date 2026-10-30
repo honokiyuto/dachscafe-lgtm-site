@@ -68,7 +68,7 @@ const handleDachshundClick = () => {
 img {
   width: 100px;
   height: 30px;
-  filter: opacity(50%);
+  filter: opacity(70%);
   object-fit: cover;
   object-position: bottom;
 }

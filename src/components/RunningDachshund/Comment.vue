@@ -26,7 +26,6 @@ export default {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  opacity: 0.5;
 }
 
 .comment {
@@ -34,11 +33,11 @@ export default {
   top: 10px;
   display: inline-block;
   margin: 1.5em 0;
-  padding: 15px 15px;
+  padding: 8px 14px;
   min-width: 120px;
   max-width: 100%;
   color: #ffffff;
-  background: #a74724;
+  background: var(--accent);
   box-sizing: border-box;
   text-align: center;
   border-radius: 10px;
@@ -51,7 +50,7 @@ export default {
   left: 50%;
   margin-left: -15px;
   border: 12px solid transparent;
-  border-top: 12px solid #a74724;
+  border-top: 12px solid var(--accent);
   z-index: 2;
 }
 

@@ -16,30 +16,15 @@ import { convertDropboxUrlListToSrcList } from '../logics/utils';
 
 <style>
   ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  li {
-    flex: 0 0 25%;
-    padding: 10px;
-  }
-
-  @media (max-width: 768px) {
-    li {
-      flex: 0 0 33%;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.25rem;
   }
 
   @media (max-width: 600px) {
-    li {
-      flex: 0 0 50%;
-    }
-  }
-
-  @media (max-width: 300px) {
-    li {
-      flex: 0 0 100%;
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
     }
   }
 </style>
